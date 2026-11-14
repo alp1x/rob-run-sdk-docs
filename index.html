@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>rob-run-sdk Reference</title>
+    <script>
+      // Dark by default; light only when the visitor chose it with the toggle.
+      let t = null;
+      try { t = localStorage.getItem('theme'); } catch {}
+      if (t !== 'light') document.documentElement.classList.add('dark');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
